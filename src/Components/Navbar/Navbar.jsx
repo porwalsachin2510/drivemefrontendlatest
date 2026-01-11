@@ -23,7 +23,7 @@ export default function Navbar({ activeTab, setActiveTab }) {
     CORPORATE: "/corporate-profile",
     B2C_PARTNER: "/",
     B2B_PARTNER: "/",
-    ADMIN: "/admin-dashboard",
+    ADMIN: "/",
   };
 
   const contractroleRedirectMap = {

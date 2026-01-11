@@ -66,7 +66,7 @@ const AdminLoginPage = () => {
         localStorage.setItem("user", JSON.stringify(response.data.user));
 
         // Redirect to admin profile
-        navigate("/admin-dashboard");
+        navigate("/");
       }
     } catch (err) {
       console.log(err.response?.data);

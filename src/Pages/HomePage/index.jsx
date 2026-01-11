@@ -9,6 +9,7 @@ import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar";
 import B2B_PartnerProfilePage from "../B2B_PartnerPages/B2B_PartnerProfilePage/B2B_PartnerProfilePage";
 import B2C_PartnerProfilePage from "../B2C_PartnerPages/B2C_PartnerProfilePage/B2C_PartnerProfilePage";
+import AdminDashboardPage from "../AdminPages/AdminDashboardPage/AdminDashboardPage";
 
 
 export default function HomePage() {
@@ -31,6 +32,9 @@ export default function HomePage() {
 
       {/* B2C_PARTNER */}
       {userRole === "B2C_PARTNER" && <B2C_PartnerProfilePage />}
+
+      {/* B2C_PARTNER */}
+      {userRole === "ADMIN" && <AdminDashboardPage />}
 
       <Footer />
     </>
